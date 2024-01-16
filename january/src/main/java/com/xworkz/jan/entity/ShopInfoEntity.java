@@ -11,19 +11,19 @@ import javax.persistence.Table;
 
 @Data
 @Entity
-@Table(name = "toy")
-@AllArgsConstructor
 @NoArgsConstructor
-public class ToyEntity {
+@AllArgsConstructor
+@Table(name="shopinfo")
+public class ShopInfoEntity {
     @Id
-    @Column(name = "t_id")
+    @Column(name="s_id")
     private  int id;
     @Column(name = "name")
     private String name;
-    @Column(name = "color")
-    private String color;
-    @Column(name = "cost")
-    private  int cost;
-    @Column(name = "material")
-    private String material;
+    @Column(name = "gstNo")
+    private String gstNo;
+    @Column(name = "address")
+    private String address;
+    @Column(name = "pincode")
+    private  int pincode;
 }

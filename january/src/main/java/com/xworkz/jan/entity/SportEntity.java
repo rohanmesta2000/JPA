@@ -9,21 +9,21 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Data
 @Entity
-@Table(name = "toy")
-@AllArgsConstructor
+@Data
 @NoArgsConstructor
-public class ToyEntity {
+@AllArgsConstructor
+@Table(name = "sports")
+public class SportEntity {
     @Id
-    @Column(name = "t_id")
+    @Column(name = "s_id")
     private  int id;
     @Column(name = "name")
     private String name;
-    @Column(name = "color")
-    private String color;
-    @Column(name = "cost")
-    private  int cost;
-    @Column(name = "material")
-    private String material;
+    @Column(name = "originCountry")
+    private String originCountry;
+    @Column(name = "captainName")
+    private String captainName;
+    @Column(name = "totalPlayers")
+    private int totalPlayers;
 }
